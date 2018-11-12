@@ -1,4 +1,4 @@
-## Image puzzle game built by vue
+Image puzzle game built by vue
 
 1. Select a image
 2. Key in sizes
