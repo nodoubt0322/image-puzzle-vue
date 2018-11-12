@@ -1,29 +1,7 @@
-# image-puzzle-vue
+## Image puzzle game built by vue
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. Select a image
+2. Key in sizes
+3. Click start button
+4. Click the tile near the empty one to move
+5. Have fun
