@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "git-page": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
     "blueimp-load-image": "^2.19.0",
@@ -13,7 +13,8 @@
     "node-sass": "^4.10.0",
     "reset-css": "^4.0.1",
     "sass-loader": "^7.1.0",
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-gh-pages": "^1.19.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",
@@ -24,6 +25,7 @@
     "eslint-plugin-vue": "^5.0.0-0",
     "vue-template-compiler": "^2.5.17"
   },
+  "homepage": "https://github.com/nodoubt0322/image-puzzle-vue",
   "eslintConfig": {
     "root": true,
     "env": {

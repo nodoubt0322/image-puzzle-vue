@@ -5,3 +5,5 @@
 3. Click start button
 4. Click the tile near the empty one to move
 5. Have fun
+
+[demo](https://nodoubt0322.github.io/image-puzzle-vue/)
