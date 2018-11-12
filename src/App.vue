@@ -1,28 +1,52 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <h1>Image Puzzle Game</h1>
+    </header>
+    <m-board ref="board" v-show="playing"  @restart="restart"  />
+    <options-pane ref="optionsPane"  @gameStart="gameStart" v-show="!playing" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MBoard from "@/components/m-board";
+import OptionsPane from "@/components/options-pane";
 export default {
-  name: 'app',
+  data() {
+    return {
+      playing: false
+    };
+  },
   components: {
-    HelloWorld
+    MBoard,
+    OptionsPane
+  },
+  methods: {
+    gameStart(data) {
+      this.playing = true;
+      this.$refs.board.gameStart(data);
+    },
+    restart() {
+      this.playing = false;
+      this.$refs.optionsPane.restart();
+    }
   }
-}
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font: 14px/20px sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  header {
+    h1 {
+      font-weight: 100;
+      height: 80px;
+      line-height: 80px;
+      font-size: 38px;
+    }
+  }
 }
 </style>
