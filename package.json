@@ -10,7 +10,7 @@
   "dependencies": {
     "blueimp-load-image": "^2.19.0",
     "lodash": "^4.17.11",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.13.1",
     "reset-css": "^4.0.1",
     "sass-loader": "^7.1.0",
     "vue": "^2.5.17",
